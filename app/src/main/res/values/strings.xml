@@ -3,10 +3,11 @@
     <string name="app_name">MyApp</string>
     <string name="chan_app">Chan Application</string>
     <string name="str1">Welcom</string>
-    <string name="str2">Profile</string>
-    <string name="str3">Music</string>
-    <string name="str4">Start</string>
+    <string name="str2">ブログ</string>
+    <string name="str3">ミュージック</string>
+    <string name="str4">ログイン</string>
     <string name="str5">ID,PassWordを入力</string>
-    <string name="str6">Login</string>
+    <string name="str6">ログイン</string>
+    <string name="str7">計算機</string>
     <string name="action_settings">Settings</string>
 </resources>

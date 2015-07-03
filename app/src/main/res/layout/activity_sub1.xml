@@ -32,7 +32,7 @@
         android:layout_height="wrap_content">
 
     <EditText
-        android:layout_width="200dp"
+        android:layout_width="152dp"
         android:layout_height="50dp"
         android:hint="ID"
         android:id="@+id/idEditText"
@@ -41,7 +41,7 @@
         android:password="true"/>
 
     <Button
-        android:layout_width="100dp"
+        android:layout_width="140dp"
         android:layout_height="70dp"
         android:text="@string/str6"
         android:id="@+id/loginbtn"

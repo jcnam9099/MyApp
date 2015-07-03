@@ -1,7 +1,9 @@
 package org.androidtown.myapp;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -28,15 +30,28 @@ public class MainActivity extends ActionBarActivity {
 
         });
 
+        final Activity context = this;
+
         Button button2 = (Button) findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onButton2Clicked(View v) {
+            public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Login", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(View, SubActivity1.class);
+                Intent intent = new Intent(context, SubActivity1.class);
                 startActivity(intent);
-            }
 
+            }
+        });
+        Button button4 = (Button) findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://google.com"));
+                startActivity(intent);
+                overridePendingTransition(0,0);
+                finish();
+            }
         });
     }
 
